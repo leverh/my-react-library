@@ -1,0 +1,40 @@
+/* ItemCard.module.css */
+
+.card {
+    /* styles... */
+  }
+  
+  .card:hover {
+    /* styles... */
+  }
+  
+  .cardImage {
+    /* styles... */
+  }
+  
+  .cardContent {
+    /* styles... */
+  }
+  
+  .cardTitle {
+    /* styles... */
+  }
+  
+  .cardDescription {
+    /* styles... */
+  }
+  
+  .cardLink {
+    /* styles... */
+  }
+  
+  .techTags {
+    /* styles... */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .card, .cardImage {
+      /* styles for smaller screens... */
+    }
+  }
+  

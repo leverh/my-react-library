@@ -1,0 +1,21 @@
+/* IconTag.module.css */
+
+.icon {
+    width: 3rem;
+    height: 3rem;
+    object-fit: contain;
+  }
+  
+  .iconWrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .iconWrapper:hover::after {
+    /* Tooltip styles... */
+  }
+  
+  .iconWrapper:hover::before {
+    /* Arrow styles for the tooltip... */
+  }
+  

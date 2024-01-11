@@ -1,0 +1,16 @@
+/* ItemGallery.module.css */
+
+.itemGallery {
+    /* styles... */
+  }
+  
+  .itemsGrid {
+    /* styles... */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .itemsGrid {
+      /* styles for smaller screens... */
+    }
+  }
+  

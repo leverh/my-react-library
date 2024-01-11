@@ -1,0 +1,14 @@
+/* HeroSection.module.css */
+
+.heroSection {
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  .heroImage {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  /* Additional styles as needed */
+  
