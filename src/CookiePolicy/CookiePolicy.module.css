@@ -1,0 +1,69 @@
+.cookiePolicy {
+    padding: 1rem;
+    max-width: 800px; /* Optimal reading width */
+    margin: auto;
+  }
+  
+  .cookiePolicy h2, .cookiePolicy h3, .cookiePolicy h4 {
+    color: #333; /* Adjust the color as per your theme */
+  }
+  
+  .cookiePolicy p {
+    line-height: 1.6;
+    color: #666; /* Adjust the color as per your theme */
+  }
+  
+  .cookiePolicy a {
+    color: #007bff; /* Adjust the color as per your theme */
+    text-decoration: none;
+  }
+  
+  .cookiePolicy a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .cookiePolicy {
+      padding: 1rem;
+    }
+  
+    .cookiePolicy h2 {
+      font-size: 1.75rem;
+    }
+  
+    .cookiePolicy h3 {
+      font-size: 1.5rem;
+    }
+  
+    .cookiePolicy h4 {
+      font-size: 1.25rem;
+    }
+  
+    .cookiePolicy p, .cookiePolicy a {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cookiePolicy {
+      padding: 0.5rem;
+    }
+  
+    .cookiePolicy h2 {
+      font-size: 1.5rem;
+    }
+  
+    .cookiePolicy h3 {
+      font-size: 1.25rem;
+    }
+  
+    .cookiePolicy h4 {
+      font-size: 1.1rem;
+    }
+  
+    .cookiePolicy p, .cookiePolicy a {
+      font-size: 0.85rem;
+    }
+  }
+  

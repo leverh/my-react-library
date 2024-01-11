@@ -1,0 +1,47 @@
+/* General Styles for Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: #ddd;
+  }
+  
+  /* Menu Icon - Hamburger Menu */
+  .menu-icon {
+    display: none; /* Initially hidden on large screens */
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  /* Styles for Menu Items */
+  .menu {
+    display: flex; /* Initially show menu items in a row on large screens */
+  }
+  
+  /* Responsive Styles for Smaller Screens */
+  @media (max-width: 768px) {
+    .menu-icon {
+      display: block; /* Show the hamburger icon */
+    }
+  
+    .menu {
+      display: none; /* Initially hide menu items on small screens */
+      flex-direction: column; /* Stack menu items vertically */
+    }
+  
+    .menu.open {
+      display: flex; /* Show menu items when menu is open */
+    }
+  }
