@@ -1,12 +1,70 @@
-## Key Points of The JS Template:
-* **Prop-driven**: The component accepts props like **links**, **logo**, **currentUser**, etc., making it flexible for various use cases.
-* **Dynamic Link Rendering**: **renderLinks** function dynamically renders navigation links based on the links prop.
-* **Support for User State**: Conditional rendering for logged in/out user states.
-* **Dark Mode Toggle**: Included as an optional feature.
-* **PropTypes**: Usage of **PropTypes** for type checking and documentation.
-* **Styles**: Assumes a unified CSS module (**Navbar.module.css**), which you'll need to merge and modify based on the styles from your two components.
+# React Navbar Component
 
-## Key Points of the CSS:
-* Class Naming: The class names have been adjusted to match the proposed component structure. For example, **.navbar** to style the `<nav>` element.
-* **Responsiveness**: The responsive styles with media queries are retained to ensure the navbar functions well on different screen sizes.
-* **Flexibility for Extension**: The structure allows you to easily add more styles specific to other elements within the navbar, like buttons or avatars, if needed.
+The `Navbar` component is a customizable navigation bar for your React applications. It provides a responsive menu with navigation links and options for user authentication and dark mode toggling.
+
+## Installation
+
+To use the `Navbar` component in your React project, follow these steps:
+
+1. Install the package using npm or yarn:
+```bash
+npm install your-react-navbar-library
+# or
+yarn add your-react-navbar-library
+```
+
+## Usage
+
+Here's how you can use the `Navbar` component in your React application:
+
+```bash
+import React from 'react';
+import Navbar from 'your-react-navbar-library';
+
+const links = [
+  { path: '/', label: 'Home' },
+  { path: '/about', label: 'About' },
+  // Add more navigation links as needed
+];
+
+function App() {
+  return (
+    <div>
+      <Navbar
+        links={links}
+        // Other props as needed
+      />
+      {/* Your other application content */}
+    </div>
+  );
+}
+
+export default App;
+```
+
+## Props
+
+The `Navbar` component accepts the following props:
+
+*   **links**: An array of navigation links with objects containing path and label.
+*    **logo**: (Optional) A URL for your application logo.
+*   **currentUser**: (Optional) An object representing the current user.
+*    **onSignOut**: (Optional) A function to handle user sign-out.
+*    **toggleDarkMode**: (Optional) A function to toggle dark mode.
+*    **darkMode**: (Optional) A boolean representing the current dark mode state. 
+
+### Example with Props
+
+```bash
+<Navbar
+  links={links}
+  logo="/path/to/your/logo.png"
+  currentUser={currentUser}
+  onSignOut={handleSignOut}
+  toggleDarkMode={toggleDarkMode}
+  darkMode={isDarkModeEnabled}
+/>
+```
+## License
+
+This component is open-source and available under the MIT License. You are free to use and modify it as needed for your projects.

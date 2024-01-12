@@ -1,10 +1,10 @@
-# Imporant CSS Rules - (At least- I think they're important ;))
+# Essential CSS Guidelines (At least- I think they're essential ;)) - Elevating the Web Experience 🚀 
 
-I love CSS a LOT! I've been using it for several years now and I've learned a lot about it. I've also been using it to build my projects. 
+I love CSS a LOT! I've been using it for several years now and I've learned a lot about it. I've also been using it to build my projects (rather than relying on Bootstrap or Tailwind). 
 
  ### Font Import
 
-I use Google Fonts to import the Montserrat, Open Sans (for example). The use of Google Fonts ensures that these fonts are loaded efficiently and are consistent across different browsers and devices.
+I often use Google Fonts (because it's simple) to import fonts. The use of Google Fonts ensures that these fonts are loaded efficiently and are consistent across different browsers and devices.
 
 I always import my fonts at the top of the index.css file- this way I can use them in my project without having to import them in every single component.
 
