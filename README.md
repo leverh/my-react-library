@@ -5,6 +5,31 @@
 
 A modern, accessible React component library designed to elevate your web experience with thoughtfully crafted UI elements.
 
+## 📚 Table of Contents
+
+- [Features](#features)
+- [Installation](#installation)
+- [Components](#components)
+  - [HeroSection](#herosection-component)
+  - [ContentSection](#contentsection-component)
+  - [ProfileSection](#profilesection-component)
+  - [CardGrid](#cardgrid-component)
+  - [ItemCard](#itemcard-component)
+  - [FormSection](#formsection-component)
+  - [Navbar](#navbar-component)
+  - [Footer](#footer-component)
+  - [ScrollToTopButton](#scrolltotopbutton-component)
+  - [Spinner](#spinner-component)
+  - [NotFound](#notfound-component)
+- [Styling Philosophy](#styling-philosophy)
+- [Accessibility Commitment](#accessibility-commitment)
+- [Getting Started with React](#getting-started-with-react)
+- [License](#license)
+- [The Joy of Building with React](#the-joy-of-building-with-react)
+- [Contact](#contact)
+
+---
+
 ## Features
 
 - ✨ Modern, responsive components with smooth animations
@@ -18,24 +43,47 @@ A modern, accessible React component library designed to elevate your web experi
 ## Installation
 
 ```bash
-npm install pixelsummit-react-components
+npm install pixelsummit-react-library
 # or
-yarn add pixelsummit-react-components
+yarn add pixelsummit-react-library
 ```
 
 ## Components
 
-### 🔗 [Navbar](./src/components/Navbar)
-A fully responsive navigation bar with mobile menu support, user authentication, and dark mode toggle.
+### 🖼️ [HeroSection](#herosection-component)
+A versatile and visually impactful hero banner component for compelling page headers and landing sections.
 
-### ⬆️ [ScrollToTopButton](./src/components/ScrollToTopButton)
-A customizable button that appears when scrolling down, allowing users to smoothly return to the top of the page.
+### 📦 [ContentSection](#contentsection-component)
+A flexible component for presenting content blocks with titles, icons, and actions.
 
-### 🔄 [Spinner](./src/components/Spinner)
-A versatile loading spinner with multiple variants, animations, and styling options.
+### 🧑‍💼 [ProfileSection](#profilesection-component)
+Ideal for showcasing team members, features, or sections in grid, list, or card layouts.
 
-### 🦶 [Footer](./src/components/Footer)
-A flexible footer component supporting multiple columns, social links, and customizable layouts.
+### 💃 [CardGrid](#cardgrid-component)
+A responsive gallery grid for displaying collections of items or projects with filters and pagination.
+
+### 🧩 [ItemCard](#itemcard-component)
+Reusable card component used within `CardGrid` for displaying individual items.
+
+### 📝 [FormSection](#formsection-component)
+Accessible, customizable form with validation, loading states, and privacy support.
+
+### 🔗 [Navbar](#navbar-component)
+A fully responsive navigation bar with mobile menu, auth, and dark mode toggle.
+
+### 🦶 [Footer](#footer-component)
+A flexible footer with multi-column support, social links, and scroll-to-top integration.
+
+### ⬆️ [ScrollToTopButton](#scrolltotopbutton-component)
+A customizable button for smoothly returning users to the top of the page.
+
+### 🔄 [Spinner](#spinner-component)
+Versatile loading spinner with multiple variants and color options.
+
+### 🚫 [NotFound](#notfound-component)
+A customizable 404 error page component with illustrations, links, and themes.
+
+---
 
 ## Component Documentation
 
