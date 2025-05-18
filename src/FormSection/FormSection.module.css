@@ -1,8 +1,345 @@
 /* FormSection.module.css */
 
 .formSection {
-    /* styles... */
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 3rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Form header */
+.formHeader {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 1rem;
+}
+
+.subtitle {
+  font-size: 1.6rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Form layout */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Form inputs */
+.label {
+  display: block;
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.required {
+  color: #e74c3c;
+  margin-left: 0.4rem;
+}
+
+.input,
+.textarea,
+.select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input:focus,
+.textarea:focus,
+.select:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+  outline: none;
+  background-color: #fff;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1.2rem center;
+  background-size: 1.5rem;
+  padding-right: 3.5rem;
+}
+
+/* Help text and errors */
+.helpText {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 0.6rem;
+}
+
+.fieldError {
+  font-size: 1.2rem;
+  color: #e74c3c;
+  margin-top: 0.6rem;
+  font-weight: 500;
+}
+
+.formError {
+  padding: 1.2rem;
+  background-color: rgba(231, 76, 60, 0.1);
+  color: #e74c3c;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+}
+
+.hasError .input,
+.hasError .textarea,
+.hasError .select {
+  border-color: #e74c3c;
+  background-color: rgba(231, 76, 60, 0.05);
+}
+
+.hasError .label {
+  color: #e74c3c;
+}
+
+/* Submit button */
+.submitButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem 2.4rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 1rem;
+  position: relative;
+  min-height: 4.8rem;
+}
+
+.submitButton:hover {
+  background-color: #2980b9;
+}
+
+.submitButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.3);
+}
+
+.submitButton:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+/* Loading state */
+.loadingSpinner {
+  display: inline-block;
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 0.8s linear infinite;
+  margin-right: 1rem;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Success message */
+.thankYouMessage {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.successIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  height: 6rem;
+  background-color: #2ecc71;
+  color: white;
+  border-radius: 50%;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  animation: scaleIn 0.5s ease;
+}
+
+@keyframes scaleIn {
+  0% { transform: scale(0); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.thankYouMessage p {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.resetButton {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  background-color: #f8f9fa;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.resetButton:hover {
+  background-color: #e9ecef;
+}
+
+/* Additional info sections */
+.contactDetails,
+.privacyStatement {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+  font-size: 1.4rem;
+  color: #666;
+}
+
+.privacyStatement {
+  font-size: 1.2rem;
+}
+
+/* Dark mode */
+.darkMode {
+  background-color: #2a2a2a;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+.darkMode .title {
+  color: #f5f5f5;
+}
+
+.darkMode .subtitle {
+  color: #c0c0c0;
+}
+
+.darkMode .label {
+  color: #c0c0c0;
+}
+
+.darkMode .input,
+.darkMode .textarea,
+.darkMode .select {
+  background-color: #333;
+  border-color: #444;
+  color: #f0f0f0;
+}
+
+.darkMode .input:focus,
+.darkMode .textarea:focus,
+.darkMode .select:focus {
+  border-color: #3498db;
+  background-color: #3a3a3a;
+}
+
+.darkMode .helpText {
+  color: #aaa;
+}
+
+.darkMode .contactDetails,
+.darkMode .privacyStatement {
+  border-top-color: #444;
+  color: #aaa;
+}
+
+.darkMode .thankYouMessage p {
+  color: #f0f0f0;
+}
+
+.darkMode .resetButton {
+  background-color: #333;
+  color: #f0f0f0;
+  border-color: #444;
+}
+
+.darkMode .resetButton:hover {
+  background-color: #3a3a3a;
+}
+
+.darkMode .select {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23f0f0f0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .formSection {
+    padding: 2rem;
+    border-radius: 0;
+    box-shadow: none;
   }
   
-  /* Additional styles as needed */
+  .title {
+    font-size: 2.2rem;
+  }
   
+  .input, 
+  .textarea, 
+  .select,
+  .submitButton {
+    font-size: 1.6rem; /* Slightly larger on mobile for better touch targets */
+  }
+  
+  .form {
+    gap: 1.6rem;
+  }
+}
+
+/* Focus styles for accessibility */
+.input:focus-visible,
+.textarea:focus-visible,
+.select:focus-visible,
+.submitButton:focus-visible,
+.resetButton:focus-visible {
+  outline: 2px solid #3498db;
+  outline-offset: 2px;
+}
+
+/* Disabled state */
+.input:disabled,
+.textarea:disabled,
+.select:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  background-color: #f0f0f0;
+}
+
+.darkMode .input:disabled,
+.darkMode .textarea:disabled,
+.darkMode .select:disabled {
+  background-color: #2a2a2a;
+}
