@@ -1115,15 +1115,15 @@ New to React? Check out my React Getting Started Guide for a step-by-step introd
 
 ## License
 
-This component library is open-source and available under the MIT License. You are free to use and modify it as needed for your projects.
+This project is licensed under the MIT License. Copy or share - I really don't care 🖖✌️
 
 ---
 
 ### The Joy of Building with React
 
-Developing websites and applications with React is not just about writing code—it's a genuinely fun and creative experience. The beauty of React lies in its simplicity once you get the hang of it. Creating interactive UIs becomes almost intuitive. You start seeing the web in components, making it easier to design, develop, and maintain complex applications.
+Developing websites and applications with React is not just about writing code—it's a genuinely fun and creative experience. The beauty of React lies in its simplicity once you get the hang of it. Creating interactive UIs becomes almost a piece of cake. You start seeing the web in components, making it easier to design, develop, and maintain complex applications.
 
-With this library, I want to show you that React is indeed a piece of cake to use once you start applying it. If you're just beginning, remember that the best way to learn React is by doing. Build something, break it, fix it, and improve it.
+With this library, I want to show you that React is indeed a piece of cake to use once you start applying it. If you're just beginning, remember that the best way to learn React is by doing. Don't let the naysayers get you down.
 
 ### Contact
 
